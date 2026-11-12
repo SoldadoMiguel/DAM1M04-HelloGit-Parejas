@@ -1,148 +1,434 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strata - AI Agents for Law Firm Operations</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strata — Exercici004</title>
+  <link rel="icon" href="assets/img/strata-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="estils.css">
+  <script defer src="assets/js/vendor/three.min.js"></script>
+  <script defer src="assets/js/vendor/3d-force-graph.min.js"></script>
+  <script defer src="assets/js/hero-graph.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>Strata</h1>
+  <!-- 1. CAPÇALERA -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo-link" aria-label="Strata Home">
+        <img src="assets/img/strata-logo.svg" alt="Strata Logo" class="logo-img">
+      </a>
 
-        <nav>
-            <a href="#platform">Platform</a> |
-            <a href="#workflows">Workflows</a> |
-            <a href="#atlas">Atlas</a> |
-            <a href="#">Book a Demo</a>
-        </nav>
-    </header>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#value">Value</a></li>
+          <li><a href="#workflows">Workflows</a></li>
+          <li><a href="#atlas">Atlas</a></li>
+          <li><a href="#governance">Governance</a></li>
+        </ul>
+      </nav>
 
-    <main>
+      <div class="header-actions">
+        <a href="#get-started" class="btn btn-primary btn-sm">Book a Demo</a>
+      </div>
+    </div>
+  </header>
 
-        <section id="hero">
-            <h2>The work your firm doesn't bill for, done.</h2>
-            <p>
-                AI agents that run the operational work your firm doesn’t bill for.
-                We turn it into recovered revenue and reclaimed capacity.
-            </p>
+  <main>
+    <!-- 2. HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img src="assets/img/strata-icon.svg" alt="Strata Symbol" class="hero-symbol">
+            <span class="etiqueta">OPERATIONAL INTELLIGENCE</span>
+          </div>
 
-            <button>Book a Demo</button>
-            <button>See the Platform</button>
-        </section>
+          <h1>Enterprise operations, <span class="text-gradient">orchestrated</span> by unified context.</h1>
 
-        <section id="platform">
-            <h2>One platform. Three surfaces.</h2>
+          <p class="hero-subtitle">
+            Connect fragmented ERP, billing, and operational systems into a living knowledge graph. Automate complex workflows with verifiable accuracy and human-in-the-loop governance.
+          </p>
 
-            <article>
-                <h3>Strata Atlas</h3>
-                <p>
-                    Where your firm's operational map lives. Data sources,
-                    knowledge organization and workflow configuration.
-                </p>
-            </article>
+          <div class="hero-buttons">
+            <a href="#get-started" class="btn btn-primary">Book a Demo</a>
+            <a href="#platform" class="btn btn-secondary">Explore Platform</a>
+          </div>
+        </div>
 
-            <article>
-                <h3>Strata Nexus</h3>
-                <p>
-                    Executive dashboard showing time saved and revenue recovered.
-                </p>
-            </article>
+        <div class="hero-media">
+          <div class="media-frame">
+            <img src="assets/img/nexus-preview.png" alt="Strata Nexus operational interface preview">
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <article>
-                <h3>Strata Canvas</h3>
-                <p>
-                    Design surface where new automations and workflows are created.
-                </p>
-            </article>
+    <!-- 3. PLATFORM -->
+    <section class="section-block" id="platform">
+      <div class="container">
+        <div class="section-header">
+          <span class="etiqueta">01 / PLATFORM</span>
+          <h2>Three layers. One unified system of action.</h2>
+        </div>
 
-            <article>
-                <h3>Strata Core</h3>
-                <p>
-                    The engine underneath every workflow, integration and dashboard.
-                </p>
-            </article>
-        </section>
+        <div class="cards-row">
+          <article class="card">
+            <span class="etiqueta tag-pill">KNOWLEDGE GRAPH</span>
+            <h3>Atlas</h3>
+            <p>Maps entities, relationships, and business rules across every siloed database, document, and API into a real-time operational model.</p>
+          </article>
 
-        <section id="value">
-            <h2>Operational Value</h2>
+          <article class="card">
+            <span class="etiqueta tag-pill">EXECUTION ENGINE</span>
+            <h3>Nexus</h3>
+            <p>Autonomous agents that execute multi-step reconciliations, validations, and exceptions across your existing enterprise software.</p>
+          </article>
 
-            <h3>Revenue Recovered</h3>
-            <p>$428,610</p>
+          <article class="card">
+            <span class="etiqueta tag-pill">HUMAN WORKSPACE</span>
+            <h3>Canvas</h3>
+            <p>A collaborative interface where operators review exceptions, inspect citations, and approve critical financial decisions.</p>
+          </article>
+        </div>
 
-            <h3>Capacity Reclaimed</h3>
-            <p>1,284 hrs</p>
-        </section>
+        <div class="core-banner">
+          <div class="core-info">
+            <span class="etiqueta">CORE INFRASTRUCTURE</span>
+            <h3>Strata Core</h3>
+            <p>Zero-retention security, role-based access controls, and native connectors for SAP, NetSuite, Salesforce, and Snowflake.</p>
+          </div>
+          <span class="dada core-status">SOC2 TYPE II • ISO 27001</span>
+        </div>
+      </div>
+    </section>
 
-        <section id="workflows">
-            <h2>Workflows We Run</h2>
+    <!-- 4. FRANJA DE MISSATGE -->
+    <section class="message-band">
+      <div class="container message-inner">
+        <span class="etiqueta">THE SHIFT</span>
+        <h2>Software used to record what happened. Strata ensures what should happen next actually gets done.</h2>
+      </div>
+    </section>
 
-            <ul>
-                <li>Invoice Management</li>
-                <li>Invoice Appeals</li>
-                <li>Billing Follow-up & Collections</li>
-                <li>Lateral Onboarding</li>
-                <li>Trust Accounting</li>
-                <li>Back Office Operations</li>
-            </ul>
-        </section>
+    <!-- 5. OPERATIONAL VALUE -->
+    <section class="section-block" id="value">
+      <div class="container">
+        <div class="section-header">
+          <span class="etiqueta">02 / OPERATIONAL VALUE</span>
+          <h2>Measurable financial impact from day one.</h2>
+        </div>
 
-        <section id="atlas">
-            <h2>Strata Atlas</h2>
+        <div class="metrics-panel">
+          <div class="metric-box">
+            <span class="etiqueta">REVENUE RECOVERY</span>
+            <p class="dada metric-number">3.8%</p>
+            <p class="metric-desc">Average unbilled revenue and pricing leakage recovered across enterprise contracts within the first 90 days.</p>
+          </div>
 
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-box">
+            <span class="etiqueta">OPERATIONAL CAPACITY</span>
+            <p class="dada metric-number">14x</p>
+            <p class="metric-desc">Increase in transaction volume handled per operations specialist without adding manual headcount.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FROM THE FIELD -->
+    <section class="field-section">
+      <div class="container field-inner">
+        <div class="field-main">
+          <span class="etiqueta etiqueta-light">03 / FROM THE FIELD</span>
+          <p class="dada field-big-stat">13,000+</p>
+          <h2>Invoices reconciled monthly with zero manual data entry.</h2>
+          <p class="field-text">
+            A global logistics enterprise replaced manual three-way matching across PDFs, EDI feeds, and ERP purchase orders with Strata Nexus and Atlas.
+          </p>
+        </div>
+
+        <aside class="field-card">
+          <span class="etiqueta">DEPLOYMENT SNAPSHOT</span>
+          <ul class="field-specs">
+            <li>
+              <span class="etiqueta">INDUSTRY</span>
+              <span class="dada">Global Supply Chain</span>
+            </li>
+            <li>
+              <span class="etiqueta">TIME TO PRODUCTION</span>
+              <span class="dada">4 Weeks</span>
+            </li>
+            <li>
+              <span class="etiqueta">AUTO-RESOLUTION RATE</span>
+              <span class="dada">94.2%</span>
+            </li>
+            <li>
+              <span class="etiqueta">AUDIT ACCURACY</span>
+              <span class="dada">99.98%</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 7. WORKFLOWS -->
+    <section class="section-block" id="workflows">
+      <div class="container">
+        <div class="section-header">
+          <span class="etiqueta">04 / WORKFLOWS</span>
+          <h2>Built for high-stakes operational processes.</h2>
+        </div>
+
+        <div class="workflows-list">
+          <article class="workflow-row">
+            <span class="dada workflow-num">01</span>
+            <div class="workflow-title-col">
+              <span class="etiqueta">FINANCE</span>
+              <h3>Order-to-Cash Reconciliation</h3>
+            </div>
+            <p class="workflow-desc">Match contracts, usage logs, and issued invoices automatically before revenue leaks.</p>
+            <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+          </article>
+
+          <article class="workflow-row">
+            <span class="dada workflow-num">02</span>
+            <div class="workflow-title-col">
+              <span class="etiqueta">PROCUREMENT</span>
+              <h3>Three-Way Invoice Matching</h3>
+            </div>
+            <p class="workflow-desc">Validate vendor bills against purchase orders and warehouse receiving receipts in real time.</p>
+            <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+          </article>
+
+          <article class="workflow-row">
+            <span class="dada workflow-num">03</span>
+            <div class="workflow-title-col">
+              <span class="etiqueta">COMPLIANCE</span>
+              <h3>Contractual SLA Auditing</h3>
+            </div>
+            <p class="workflow-desc">Extract obligations from unstructured PDFs and monitor live operational delivery against terms.</p>
+            <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+          </article>
+
+          <article class="workflow-row">
+            <span class="dada workflow-num">04</span>
+            <div class="workflow-title-col">
+              <span class="etiqueta">SUPPLY CHAIN</span>
+              <h3>Logistics &amp; Freight Settlement</h3>
+            </div>
+            <p class="workflow-desc">Detect duplicate surcharges, rate-card discrepancies, and customs delays across carriers.</p>
+            <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+          </article>
+
+          <article class="workflow-row">
+            <span class="dada workflow-num">05</span>
+            <div class="workflow-title-col">
+              <span class="etiqueta">REVOPS</span>
+              <h3>Renewal &amp; Expansion Hygiene</h3>
+            </div>
+            <p class="workflow-desc">Synchronize CRM opportunities with actual product consumption and billing schedules.</p>
+            <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+          </article>
+
+          <article class="workflow-row">
+            <span class="dada workflow-num">06</span>
+            <div class="workflow-title-col">
+              <span class="etiqueta">OPERATIONS</span>
+              <h3>Cross-System Master Data Sync</h3>
+            </div>
+            <p class="workflow-desc">Resolve duplicate vendor and customer records across acquired subsidiaries continuously.</p>
+            <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ATLAS -->
+    <section class="section-block section-tinted" id="atlas">
+      <div class="container">
+        <div class="section-header">
+          <span class="etiqueta">05 / ATLAS ENGINE</span>
+          <h2>Institutional memory that stays continuously up to date.</h2>
+        </div>
+
+        <div class="atlas-showcase">
+          <div class="media-frame">
+            <img src="assets/img/atlas-preview.png" alt="Strata Atlas Knowledge Graph Interface">
+          </div>
+        </div>
+
+        <div class="steps-row">
+          <div class="step-card">
+            <span class="dada step-index">STEP 01</span>
             <h3>Map</h3>
-            <p>Atlas learns how your firm actually works.</p>
-
+            <p>Ingest schemas, documents, and communication threads across your stack.</p>
+          </div>
+          <div class="step-card">
+            <span class="dada step-index">STEP 02</span>
             <h3>Structure</h3>
-            <p>Your knowledge is organized for AI agents.</p>
-
+            <p>Link entities into a typed ontology tailored to your business logic.</p>
+          </div>
+          <div class="step-card">
+            <span class="dada step-index">STEP 03</span>
             <h3>Operate</h3>
-            <p>Agents run the work and report recovery.</p>
-
+            <p>Expose live context to agents and operators at decision time.</p>
+          </div>
+          <div class="step-card">
+            <span class="dada step-index">STEP 04</span>
             <h3>Refine</h3>
-            <p>Correct mistakes and keep the map updated.</p>
-        </section>
+            <p>Learn from every human correction to improve future precision.</p>
+          </div>
+        </div>
 
-        <section id="governance">
-            <h2>Governance</h2>
+        <!-- Exemple estàtic de consulta i targetes de nodes -->
+        <div class="atlas-demo-panel">
+          <div class="query-bar">
+            <span class="etiqueta">QUERY</span>
+            <p class="dada query-text">"Verify Q3 volume discount tier for Acme Corp against Master Service Agreement #409"</p>
+          </div>
 
-            <ul>
-                <li>Cited answers with source references.</li>
-                <li>Human approval checkpoints.</li>
-                <li>Controlled and approved actions.</li>
-                <li>Model and tool governance.</li>
-            </ul>
-        </section>
+          <div class="nodes-row">
+            <div class="node-card">
+              <div class="node-header">
+                <span class="etiqueta">NODE • CONTRACT_ENTITY</span>
+                <span class="dada badge-ok">VERIFIED</span>
+              </div>
+              <h3>MSA #409 — Acme Corp</h3>
+              <p class="dada node-meta">Tier 2 Threshold: &gt; 50,000 units | Discount: 12.5%</p>
+            </div>
 
-        <section id="process">
-            <h2>How It Works</h2>
+            <div class="node-card">
+              <div class="node-header">
+                <span class="etiqueta">NODE • ERP_USAGE_LEDGER</span>
+                <span class="dada badge-warn">ADJUSTMENT NEEDED</span>
+              </div>
+              <h3>Q3 Billed Volume: 54,210 units</h3>
+              <p class="dada node-meta">Applied Rate: 8.0% | Credit Due: $14,820.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <ol>
-                <li>Trigger</li>
-                <li>Agent Works</li>
-                <li>Team Approval</li>
-                <li>Delivery</li>
-            </ol>
-        </section>
+    <!-- 9. GOVERNANCE -->
+    <section class="section-block" id="governance">
+      <div class="container">
+        <div class="section-header">
+          <span class="etiqueta">06 / GOVERNANCE</span>
+          <h2>Deterministic control over autonomous execution.</h2>
+        </div>
 
-        <section id="cta">
-            <h2>See what your firm is currently writing off.</h2>
-            <p>Your firm has a write-off number. Let's find it.</p>
+        <div class="gov-cards-row">
+          <article class="card">
+            <span class="etiqueta">01</span>
+            <h3>Cited</h3>
+            <p>Every conclusion links directly to the exact source row, document clause, or API payload.</p>
+          </article>
 
-            <button>Book a Demo</button>
-        </section>
+          <article class="card">
+            <span class="etiqueta">02</span>
+            <h3>Approved</h3>
+            <p>Configurable confidence thresholds route high-value actions for human sign-off.</p>
+          </article>
 
-    </main>
+          <article class="card">
+            <span class="etiqueta">03</span>
+            <h3>Contained</h3>
+            <p>Agents operate strictly within scoped permissions and sandboxed write-back rules.</p>
+          </article>
 
-    <footer>
-        <p>Strata AI</p>
+          <article class="card">
+            <span class="etiqueta">04</span>
+            <h3>Controlled</h3>
+            <p>Immutable audit trails record every prompt, rule evaluation, and state mutation.</p>
+          </article>
+        </div>
 
-        <nav>
-            <a href="#platform">Platform</a> |
-            <a href="#workflows">Workflows</a> |
-            <a href="#atlas">Atlas</a>
-        </nav>
-    </footer>
+        <!-- Esquema dels quatre passos d'una execució -->
+        <div class="execution-flow">
+          <div class="flow-step">
+            <span class="dada">1. TRIGGER</span>
+            <p>Event detected in ERP</p>
+          </div>
+          <span class="flow-sep" aria-hidden="true">&rarr;</span>
+          <div class="flow-step">
+            <span class="dada">2. CONTEXT</span>
+            <p>Atlas retrieves rules</p>
+          </div>
+          <span class="flow-sep" aria-hidden="true">&rarr;</span>
+          <div class="flow-step">
+            <span class="dada">3. POLICY CHECK</span>
+            <p>Guardrails validated</p>
+          </div>
+          <span class="flow-sep" aria-hidden="true">&rarr;</span>
+          <div class="flow-step">
+            <span class="dada">4. COMMIT</span>
+            <p>Logged &amp; executed</p>
+          </div>
+        </div>
+
+        <!-- Franja de garanties -->
+        <div class="guarantees-strip">
+          <span class="dada">ZERO MODEL TRAINING ON CUSTOMER DATA</span>
+          <span class="dada">END-TO-END ENCRYPTION</span>
+          <span class="dada">FULL ROLE-BASED ACCESS CONTROL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. GET STARTED -->
+    <section class="cta-section" id="get-started">
+      <div class="container cta-inner">
+        <span class="etiqueta">GET STARTED</span>
+        <h2>Deploy operational intelligence across your enterprise.</h2>
+        <p class="cta-subtitle">See how Strata connects your existing stack in a tailored 30-minute walkthrough.</p>
+
+        <div class="cta-actions">
+          <a href="https://www.strata.ai/" class="btn btn-primary">Book a Demo</a>
+          <a href="#top" class="btn btn-secondary">Back to Top</a>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust-item">
+            <span class="dada">ENTERPRISE READY</span>
+            <p>Dedicated single-tenant deployment options</p>
+          </div>
+          <div class="trust-item">
+            <span class="dada">RAPID ONBOARDING</span>
+            <p>First live workflow running in under 30 days</p>
+          </div>
+          <div class="trust-item">
+            <span class="dada">FULL AUDITABILITY</span>
+            <p>Complete lineage for finance and compliance teams</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PEU DE PÀGINA -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/strata-logo.svg" alt="Strata Logo" class="logo-img">
+        <p class="footer-note">Academic layout reproduction — Exercici004 (DAM1M04).</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#platform">Platform</a>
+        <a href="#value">Value</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#atlas">Atlas</a>
+        <a href="#governance">Governance</a>
+      </nav>
+
+      <p class="dada copyright">&copy; 2026 Strata. Design &amp; assets reference by Strata.ai.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
